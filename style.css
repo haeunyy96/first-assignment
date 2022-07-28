@@ -262,8 +262,8 @@ html {
 html {
     font-family: 'Lato', sans-serif;
     font-family: 'Playfair Display', serif;
-    max-width: 1080px;
-    width: 90%;
+    max-width: 1200px;
+    width: 95%;
     margin: 0 auto;
 }
 
@@ -272,22 +272,88 @@ header {
     min-height: 100vh;
     background-size: cover;
     background-position: center;
-    padding: 50px 0;
+    padding: 30px 50px;
     color: white;
     text-align: center;
 }
 
+h2 {
+    font-size: 2.5rem;
+}
 .flexbox {
     display: flex;
     /* flex-direction: row; */
     flex-wrap: wrap;
 }
 
-#about {
-    background-color: #F0F5FF;
-    text-align: center;
+/* header */
+.logo-and-nav {
+    display: flex;
+    justify-content: space-between;
 }
 
+.logo {
+    font-size: 2.5rem;
+}
+
+nav {
+    padding-right: 50px;
+}
+li {
+    list-style: none;
+    display: inline;
+    font-family: 'lato';
+    padding-right: 15px;
+    font-size: 1rem;
+}
+
+h1 {
+    padding-top: 400px;
+    font-family: 'lato';
+}
+
+h1 span {
+    display: block;
+    font-family: 'playfair display';
+    font-weight: bold;
+    font-size: 4.5rem;
+}
+
+/* about */
+.wrapper {
+    background-color: #F0F5FF;
+    text-align: center;
+    padding: 80px 300px;
+}
+.about-p {
+    font-family: 'lato';
+    padding-bottom: 20px;
+    line-height: 25px;
+}
+
+button {
+    background-color: #e7a8e6;
+    border: none;
+    padding: 10px 15px;
+}
+
+/* gallery */
+.gallery {
+    display: flex;
+    padding: 70px;
+    justify-content: space-between;
+}
+.gallery img {
+    width: 32%;
+}
+
+/* links */
 .links {
     background-image: url(./shutter-assets/asset-5.jpg);
+    min-height: 250px;
+    color: white;
+    text-align: center;
+}
+.links ul li {
+
 }

@@ -286,6 +286,12 @@ h2 {
     flex-wrap: wrap;
 }
 
+p {
+    font-family: 'lato';
+    padding-bottom: 20px;
+    line-height: 25px;
+}
+
 /* header */
 .logo-and-nav {
     display: flex;
@@ -354,6 +360,58 @@ button {
     color: white;
     text-align: center;
 }
-.links ul li {
+.links ul {
+    padding-top: 100px;
+}
 
+/* photo tips */
+.phototips {
+    padding: 70px;
+    display: flex;
+}
+.phototips img {
+    width: 50%;
+}
+.phototips .text {
+    width: 60%;
+}
+
+/* blog */
+.blog {
+    padding: 70px;
+    background-color: #F0F5FF;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 400px;
+
+}
+.blog img {
+    width: 50%;
+}
+
+/* contact */
+.contact {
+    padding: 70px;
+    background-color: #1f2022;
+    color: white;
+    font-family: 'lato';
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.footer-nav {
+    display: flex;
+    font-weight: 400;
+}
+
+/* copyright */
+.copyright {
+    padding: 10px;
+    background-color: #000;
+    color: white;
+    text-align: center;
+}
+.copyright p {
+    padding-bottom: 0;
 }

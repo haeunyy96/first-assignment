@@ -14,110 +14,143 @@
 </head>
 
 <body>
-   <header>
+   <header id="home">
         <div class="logo-and-nav">
             <logo class="logo">Shutter</logo>
-            <nav>
+            <button class="hamburger">
+                <a href="#"><span>≡</span></a>
+            </button>
+            <nav class="header-nav">
                 <ul>
-                    <li <a href="#home">HOME</a></li>
-                    <li <a href="#about">ABOUT</a></li>
-                    <li <a href="#blog">BLOG</a></li>
-                    <li <a href="#contact">CONTACT</a></li>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#blog">BLOG</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
 
                 </ul>
             </nav>
         </div>
         <nav class="icon-nav">
             <ul class="icon-ul">
-                    <li class="icon-li"<i class="fa-brands fa-facebook-f"></i></li>
-                    <li class="icon-li"<i class="fa-brands fa-instagram"></i></li>
-                    <li class="icon-li"<i class="fa-brands fa-linkedin-in"></i></li>
-                    <li class="icon-li"<i class="fa-brands fa-twitter"></i></li>
+                    <li><a href="http://facebook.com"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="http://instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="http://linkedin.com"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li><a href="http://twitter.com"><i class="fa-brands fa-twitter"></i>
+                    </a></li>
             </ul>
         </nav>
-        <h1>WELCOME TO <span>SHUTTER</span></h1>
+        <h1>WELCOME TO <span>Shutter</span></h1>
     
    </header>
    <main>
-        <div class="wrapper"id="#about">
+        <div class="wrapper about"id="about">
             <h2>About Shutter</h2>
             <p class="about-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
             aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <button>FIND OUT MORE</button>
+            <button><a href="#">FIND OUT MORE</a></button>
         </div>
-        <div class="gallery" id="#gallery">
-            <img src="./shutter-assets/asset-2.jpg" alt="">
-            <img src="./shutter-assets/asset-3.jpg" alt="">
-            <img src="./shutter-assets/asset-4.jpg" alt="">
-        </div>
-        <div class="links">
+        <div class="gallery wrapper" id="gallery">
             <ul>
-                <li <a href="#gallery">Gallery</a></li>
-                <li <a href="#phototips">Photo Tips</a></li>
-                <li <a href="#about">About</a></li>
-                <li <a href="#contact">Contact</a></li>
-
+                <li><img src="./shutter-assets/asset-2.jpg" alt=""></li>
+                <li><img src="./shutter-assets/asset-3.jpg" alt=""></li>
+                <li><img class=thirdImage src="./shutter-assets/asset-4.jpg" alt=""></li>
             </ul>
         </div>
-        <div class="phototips" id="#phototips">
-            <div>
-                <img src="./shutter-assets/asset-6.jpg" alt="">
-            </div>
-            <div class="text">
-                <h2>Behind the Lens</h2>
-                <p class="phototips-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <button>FIND OUT MORE</button>
-            </div>
+        <div class="links wrapper">
+        <ul class="firstList">
+            <li>
+                <ul>
+                    <li><a href="#gallery"> <i class="icon fa-regular fa-images"></i></a></li>
+                    <li><a href="#gallery" class="linkText">Gallery</a></li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li><a href="#phototips"> <i class="icon fa-solid fa-camera"></i></a></li>
+                    <li><a href="#phototips" class="linkText">Photo Tips</a></li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li><a href="#about"><i class="icon fa-regular fa-image"></i> </a></li>
+                    <li><a href="#about" class="linkText">About</a></li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li><a href="#contact"> <i class="icon fa-solid fa-envelope"></i> </a></li>
+                    <li><a href="#contact" class="linkText"> Contact</a></li>
+                </ul>
+            </li>
+        </ul>
         </div>
-        <div class="blog" id="#blog">
-            <div>
+            <div class="photoTips wrapper" id="phototips">
+                <div class="imageContainer">
+                    <img src="./shutter-assets/asset-6.jpg" alt="">
+                </div>
+                <div class="textContainer">
+                    <h2>Behind the Lens</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque eaque cupiditate porro. Nulla cum aut dolore,
+                    exercitationem at fugiat nemo eius eligendi, dignissimos eaque suscipit! Illo et, omnis officia, accusantium neque
+                    nostrum debitis rem expedita sit provident iure asperiores repellat laboriosam voluptas veritatis labore nemo iste fuga
+                    aut saepe dolores itaque, nesciunt tempore ut! Sequi cum modi porro atque consequuntur!</p>
+                    <button><a href="#">FIND OUT MORE</a></button>
+                </div>
+            </div>
+           
+        <div class="blog" id="blog">
+            <div class="blogText1">
                 <h3>Nature & Scenary</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <button>READ MORE</button>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.</p>
+                <button><a href="#">READ MORE</a></button>
             </div>
-            <div>
-                <img src="./shutter-assets/asset-7.jpg" alt="">       
+            <div class="blogImage">
+                <img src="./shutter-assets/asset-7.jpg" alt="">
             </div>
-            <div>
+            <div class="blogImage">
+                <img src="./shutter-assets/asset-8.jpg" alt="">
+            </div>
+            <div class="blogText2">
                 <h3>Candid Photography</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-            <div>
-                <img src=./shutter-assets/asset-8.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua.</p>
+                <button><a href="#">READ MORE</a></button>
             </div>
 
         </div>
    </main>
    <footer>
-        <div>
-            <div class="contact" id="#contact">
-                <div>
-                    <h3>CONTACT</h3>
-                    <p>info@email.com</p>
-                    <p>123-456-7890</p>
-                    <p>123 some road.</p>
-                    <p>Toronto, ON</p>
-                </div>
-                <div>
-                    <h3>STAY UPDATED</h3>
-                    <p>Subscribe to our newsletter to stay updated.</p>
-                    <input type="">
-                </div>
-                <div>
-                    <nav>
-                        <h3> PAGES
-                            <li class="footer-nav"<a href="#home">HOME</a></li>
-                            <li class="footer-nav"<a href="#about">ABOUT</a></li>
-                            <li class="footer-nav"<a href="#blog">BLOG</a></li>
-                            <li class="footer-nav"<a href="#contact">CONTACT</a></li>
-                        </h3>
-                    </nav>
-                </div>
+        <div class="footer">
+            <div class="contact" id="contact">
+                <ul>
+                    <li><h3 class="footer-h3">CONTACT</h3></li>
+                    <li class="contact-list">info@email.com</li>
+                    <li class="contact-list">123-456-7890</li>
+                    <li class="contact-list">123 some road.</li>
+                    <li class="contact-list">Toronto, ON</li>
+                </ul>
             </div>
-            <div class="copyright">
-                <p>Copyright 2018 HackerYou</p>
+            <div class="stayUpdated">
+                <h3 class="footer-h3">STAY UPDATED</h3>
+                <p>Subscribe to our newsletter to stay updated.</p>
+                <input type="email" name="email address" class="email-address">
+                <input type="button" value="SUBSCRIBE" class="button">
             </div>
+            <div class="pages">
+                <nav>
+                    <ul> 
+                        <li><h3 class="footer-h3">PAGES</h3></li>
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#blog">BLOG</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="copyright">
+                <p>Copyright © 2018 HackerYou</p>
         </div>
    </footer>
 </body>

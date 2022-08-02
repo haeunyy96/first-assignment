@@ -262,8 +262,8 @@ html {
 html {
     font-family: 'Lato', sans-serif;
     font-family: 'Playfair Display', serif;
-    max-width: 1200px;
-    width: 95%;
+    max-width: 1300px;
+    width: 100;
     margin: 0 auto;
 }
 
@@ -271,7 +271,7 @@ header {
     background-image: url(./shutter-assets/asset-1.jpg);
     min-height: 100vh;
     background-size: cover;
-    background-position: center;
+    background-position: top;
     padding: 30px 50px;
     color: white;
     text-align: center;
@@ -279,7 +279,9 @@ header {
 
 h2 {
     font-size: 2.5rem;
+    margin-top: 0;
 }
+
 .flexbox {
     display: flex;
     /* flex-direction: row; */
@@ -292,6 +294,13 @@ p {
     line-height: 25px;
 }
 
+a {
+    text-decoration: none;
+}
+
+nav ul li a{
+    color: white;
+}
 /* header */
 .logo-and-nav {
     display: flex;
@@ -301,96 +310,166 @@ p {
 .logo {
     font-size: 2.5rem;
 }
-
+.hamburger {
+    display: none;
+    background-color: transparent;
+}
 nav {
     padding-right: 50px;
+    font-family: 'lato';
 }
 li {
     list-style: none;
     display: inline;
-    font-family: 'lato';
     padding-right: 15px;
     font-size: 1rem;
 }
-
+.icon-nav {
+    margin-top:150px;
+    padding: 0;
+}
+.icon-nav ul li {
+    display: block;
+    text-align: right;
+    padding: 10px;
+    
+}
 h1 {
-    padding-top: 400px;
+    padding-top: 200px;
     font-family: 'lato';
+    font-weight: 400;
 }
 
 h1 span {
     display: block;
     font-family: 'playfair display';
     font-weight: bold;
-    font-size: 4.5rem;
+    font-size: 7.5rem;
+    text-align: center;
 }
 
 /* about */
 .wrapper {
-    background-color: #F0F5FF;
     text-align: center;
-    padding: 80px 300px;
+    padding: 80px;
+}
+.about {
+    background-color: #F0F5FF;
 }
 .about-p {
     font-family: 'lato';
     padding-bottom: 20px;
     line-height: 25px;
+    width: 60%;
+    margin: auto;
 }
 
-button {
+button, .button {
     background-color: #e7a8e6;
     border: none;
-    padding: 10px 15px;
+    padding: 13px 15px 10px;
+}
+button a {
+    color: black;
 }
 
 /* gallery */
 .gallery {
     display: flex;
-    padding: 70px;
     justify-content: space-between;
 }
+.gallery ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
 .gallery img {
-    width: 32%;
+    width: 30%;
 }
 
 /* links */
 .links {
     background-image: url(./shutter-assets/asset-5.jpg);
-    min-height: 250px;
-    color: white;
+    background-position: bottom right;
+    min-height: 200px;
     text-align: center;
+    font-family: 'Playfair Display', serif;
 }
-.links ul {
-    padding-top: 100px;
+.links a{
+    color: white;
+    padding-right: 20px;
+}
+.firstList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-left: 0;
+}
+.firstList li ul {
+    display:flex;
+    flex-direction: column;
+}
+.firstList li ul li {
+    padding-top: 10px;
+}
+.icon {
+    font-size: 30px;
+}
+.linkText {
+    font-size: 20px;
 }
 
 /* photo tips */
-.phototips {
-    padding: 70px;
-    display: flex;
+.photoTips {
+    background-color: white;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
-.phototips img {
-    width: 50%;
+.imageContainer {
+    width: 25%;
+    padding-right: 20px;
 }
-.phototips .text {
-    width: 60%;
+.imageContainer img {
+    max-width: 100%;
+
 }
+.textContainer {
+    width: 74%;
+    text-align: left;
+}
+.textContainer p {
+    margin: 0;
+}
+
 
 /* blog */
 .blog {
-    padding: 70px;
-    background-color: #F0F5FF;
     display: flex;
     flex-wrap: wrap;
-    min-height: 400px;
-
 }
-.blog img {
+
+.blogText1 {
+    background-color: #F0F5FF;
+    text-align: right;
     width: 50%;
+    padding: 70px;
+}
+.blogText2 {
+    background-color: #F0F5FF;
+    text-align: left;
+    width: 50%;
+    padding: 70px;
+}
+.blogImage {
+    width: 50%;
+}
+.blogImage img {
+    max-width: 100%;
 }
 
 /* contact */
-.contact {
+.footer {
     padding: 70px;
     background-color: #1f2022;
     color: white;
@@ -398,11 +477,31 @@ button {
     display: flex;
     justify-content: space-between;
     text-align: center;
+    line-height: 25px;
 }
-
-.footer-nav {
-    display: flex;
-    font-weight: 400;
+.footer-h3 {
+    margin-bottom: 0;
+}
+.stayUpdated p {
+    margin: 0;
+    padding-bottom: 10px;
+}
+/* .email-address {
+  border: 2px;
+  border-radius:;
+  height: 38px;
+  width: 260px;
+  padding: 5px;
+  margin-top: 5;
+  font-family: 'lato';
+  } */
+.contact ul li {
+    display: block;
+    text-align: left;
+}
+.pages nav ul li{
+    display: block;
+    text-align: right;
 }
 
 /* copyright */
@@ -414,4 +513,108 @@ button {
 }
 .copyright p {
     padding-bottom: 0;
+}
+
+/* media query */
+@media (max-width: 800px) {
+    .hamburger {
+        display: block;
+        text-align: right;
+        margin: 0;
+        padding-top: 0;
+    }
+    .hamburger a{
+        color: white;
+        font-size: 50px;
+    }
+    .logo {
+        margin-top: 10px;
+    }
+    .header-nav {
+        display: none;
+    }
+    header {
+        padding: 15px;
+        padding-left: 30px;
+        min-height: 90vh;
+    }
+    h1 {
+        text-align: center;
+        padding-top: 150px;
+    }
+
+    .wrapper {
+        padding: 10px;
+    }
+    .icon-nav {
+        display: none;
+    }
+    .about {
+        padding: 50px 0;
+    }
+    .about-p {
+        width: 80%;
+    }
+    .gallery {
+        padding: 0;
+        display: inline-block;
+    }
+    .gallery ul li {
+        padding: 0;
+    }
+    .gallery ul {
+        padding: 0;
+    }
+    .gallery img {
+        width: 45%;
+    }
+    .thirdImage {
+        display: none;
+    }
+    .photoTips {
+        display: block;
+        padding: 50px;
+    }
+    .imageContainer {
+        width: 100%;
+        padding:0;
+        padding-bottom: 25px;
+    }
+    .textContainer {
+        width: 100%;
+        text-align: center;
+
+    }
+    button {
+        margin: auto;
+    }
+    h3 {
+        font-size: 1.8rem;
+    }
+    .blog {
+        display: block;
+    }
+    .blogText1, .blogText2, .blogImage {
+        width: 100%;
+        text-align: center;
+    }
+    .blogText1, .blogText2 {
+        padding: 50px;
+    }
+    .footer {
+        display: block;
+    }
+    .stayUpdated {
+        width: 100%;
+    }
+    .email-address {
+        width: 100%;
+    }
+    .button {
+        width: 100%;
+        margin-top:10px;
+    }
+    .firstList {
+        display: block;
+    }
 }

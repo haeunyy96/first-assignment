@@ -6,4 +6,4 @@ Welcome to my Project Repo!
 
 'Shutter' is my first (ever!) full page website that I have created!
 
-Click the link to check it out! -> ✨ https://theshutter.netlify.app/ ✨
+Click the link to check it out!! ✨ https://theshutter.netlify.app/ ✨
